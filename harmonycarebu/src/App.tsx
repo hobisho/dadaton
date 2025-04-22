@@ -14,6 +14,22 @@ class App extends React.Component {
         super(props);
 
         this.onSubmit = this.onSubmit.bind(this)
+        this.speak = this.speak.bind(this)
+    }
+
+    speak(text: string) {
+        const utterance = new SpeechSynthesisUtterance(text);
+
+        // 設定語言（中文）
+        utterance.lang = 'zh-TW';
+
+        // 可選：設定語速、音調、音量
+        utterance.rate = 1;   // 語速（0.1 ~ 10）
+        utterance.pitch = 1;  // 音調（0 ~ 2）
+        utterance.volume = 1; // 音量（0 ~ 1）
+
+        // 播放語音
+        window.speechSynthesis.speak(utterance);
     }
 
     createSystemMessage(query='', image='') {
@@ -55,7 +71,7 @@ class App extends React.Component {
             systemMessageBox.appendChild(document.createElement("br"))
             systemMessageBox.appendChild(button)
             button.textContent = '朗讀(read)'
-
+            button.onclick = () => this.speak(answer);
         })
         .catch((_error) => {
             systemMessageBox.textContent  = '❌ 連線錯誤，請稍後再試。'
