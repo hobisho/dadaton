@@ -1,0 +1,908 @@
+
+[分類] 常見單詞（越南語）
+vi: Xin chào
+zh: 你好
+
+vi: Cảm ơn
+zh: 謝謝
+
+vi: Tạm biệt
+zh: 再見
+
+vi: Vâng
+zh: 是
+
+vi: Không
+zh: 不是
+
+vi: Nước
+zh: 水
+
+vi: Cơm
+zh: 飯
+
+vi: Nhà vệ sinh
+zh: 廁所
+
+vi: Đau
+zh: 痛
+
+vi: Mệt
+zh: 累
+
+[分類] 常見句子（越南語）
+vi: Bạn có khỏe không?
+zh: 你還好嗎？
+
+vi: Tôi đói.
+zh: 我餓了。
+
+vi: Tôi khát.
+zh: 我渴了。
+
+vi: Tôi muốn đi vệ sinh.
+zh: 我想上廁所。
+
+vi: Tôi đau đầu.
+zh: 我頭痛。
+
+vi: Tôi cần giúp đỡ.
+zh: 我需要幫助。
+
+vi: Tôi không hiểu.
+zh: 我不懂。
+
+vi: Làm ơn nói chậm lại.
+zh: 請說慢一點。
+
+[分類] 照顧人常用單詞（印尼語）
+id: Air
+zh: 水
+
+id: Obat
+zh: 藥
+
+id: Makan
+zh: 吃
+
+id: Tidur
+zh: 睡覺
+
+id: Sakit
+zh: 疼痛
+
+id: Kamar mandi
+zh: 廁所
+
+id: Duduk
+zh: 坐
+
+id: Bangun
+zh: 起床
+
+[分類] 照顧人常用句子（印尼語）
+id: Apakah Anda lapar?
+zh: 你肚子餓嗎？
+
+id: Apakah Anda ingin minum air?
+zh: 你想喝水嗎？
+
+id: Mari kita mandi.
+zh: 我們來洗澡吧。
+
+id: Tolong beri tahu saya jika Anda sakit.
+zh: 如果不舒服請告訴我。
+
+id: Waktunya untuk minum obat.
+zh: 該吃藥了。
+
+id: Silakan duduk di sini.
+zh: 請坐這裡。
+
+id: Mari kita berjalan-jalan sedikit.
+zh: 我們散步一下吧。
+
+id: Apakah Anda ingin beristirahat?
+zh: 你想休息一下嗎？
+
+[分類] 常見單詞（他加祿語）
+tl: Tubig
+zh: 水
+
+tl: Pagkain
+zh: 食物
+
+tl: Ospital
+zh: 醫院
+
+tl: Masakit
+zh: 疼痛
+
+tl: Pahinga
+zh: 休息
+
+tl: Gabi
+zh: 晚上
+
+tl: Umaga
+zh: 早上
+
+tl: CR (Comfort Room)
+zh: 廁所
+
+[分類] 常見句子（他加祿語）
+tl: Anong pangalan mo?
+zh: 你叫什麼名字？
+
+tl: Kumusta ka?
+zh: 你好嗎？
+
+tl: Salamat po.
+zh: 謝謝您
+
+tl: Gusto mo ba ng tubig?
+zh: 你要喝水嗎？
+
+tl: Nasaan ang banyo?
+zh: 廁所在哪？
+
+tl: May masakit ba sa iyo?
+zh: 你哪裡不舒服嗎？
+
+tl: Gusto mo bang kumain?
+zh: 你想吃東西嗎？
+
+tl: Kailangan mo ba ng tulong?
+zh: 你需要幫忙嗎？
+
+[分類] 照顧人常用句子（他加 祿語）
+tl: Oras na para uminom ng gamot.
+zh: 該吃藥了。
+
+tl: Halika, maglakad tayo.
+zh: 來，我們走走。
+
+tl: Sabihin mo sa akin kung masakit.
+zh: 如果痛的話告訴我。
+
+tl: Kailangan mong magpahinga.
+zh: 你需要休息。
+
+tl: Huwag kang mag-alala, nandito ako.
+zh: 別擔心，我在這裡。
+
+tl: Gusto mo bang maligo?
+zh: 你想洗澡嗎？
+
+tl: Dahan-dahan lang.
+zh: 慢慢來。
+
+說明: 他加祿語（Tagalog）是菲律賓的主要語言之一，也是官方語言「Filipino」的基礎。
+
+[分類] 常見單詞（越南語）
+vi: Bác sĩ
+zh: 醫生
+
+vi: Thuốc
+zh: 藥
+
+vi: Ngủ
+zh: 睡覺
+
+vi: Giúp
+zh: 幫助
+
+vi: Mở
+zh: 開
+
+vi: Đóng
+zh: 關
+
+vi: Tay
+zh: 手
+
+vi: Chân
+zh: 腳
+
+vi: Mắt
+zh: 眼睛
+
+vi: Miệng
+zh: 嘴巴
+
+[分類] 常見句子（越南語）
+vi: Bạn có muốn ăn không?
+zh: 你想吃東西嗎？
+
+vi: Bạn cần nghỉ ngơi.
+zh: 你需要休息。
+
+vi: Tôi sẽ giúp bạn.
+zh: 我會幫助你。
+
+vi: Hãy cẩn thận.
+zh: 請小心。
+
+vi: Tôi không sao.
+zh: 我沒事。
+
+vi: Bạn có muốn đi dạo không?
+zh: 你想去散步嗎？
+
+vi: Tôi cảm thấy không khỏe.
+zh: 我覺得不舒服。
+
+vi: Tôi muốn nằm nghỉ.
+zh: 我想躺下休息。
+
+[分類] 照顧人常用單詞（印尼語）
+id: Bantuan
+zh: 協助
+
+id: Lelah
+zh: 疲倦
+
+id: Bahaya
+zh: 危險
+
+id: Tangan
+zh: 手
+
+id: Kaki
+zh: 腳
+
+id: Mata
+zh: 眼睛
+
+id: Mulut
+zh: 嘴巴
+
+id: Tidur siang
+zh: 午休
+
+[分類] 照顧人常用句子（印尼語）
+id: Jangan khawatir, saya akan bantu.
+zh: 別擔心，我會幫你。
+
+id: Ayo duduk dulu sebentar.
+zh: 我們先坐一下。
+
+id: Tolong buka mulut.
+zh: 請張嘴。
+
+id: Mari kita bersihkan badan.
+zh: 我們來擦洗一下身體。
+
+id: Saya akan menemani Anda.
+zh: 我會陪著你。
+
+id: Apakah Anda ingin tidur siang?
+zh: 你想午休一下嗎？
+
+id: Apakah Anda merasa lelah?
+zh: 你覺得累嗎？
+
+[分類] 常見單詞（他加祿語）
+tl: Tulong
+zh: 幫助
+
+tl: Gamot
+zh: 藥
+
+tl: Matulog
+zh: 睡覺
+
+tl: Kamay
+zh: 手
+
+tl: Paa
+zh: 腳
+
+tl: Mata
+zh: 眼睛
+
+tl: Bibig
+zh: 嘴巴
+
+tl: Gising
+zh: 醒來
+
+tl: Pagod
+zh: 累
+
+tl: Ligtas
+zh: 安全
+
+[分類] 常見句子（他加祿語）
+tl: Kailangan mo ba ng tubig?
+zh: 你需要水嗎？
+
+tl: Gusto mo bang matulog?
+zh: 你想睡覺嗎？
+
+tl: Saan ang ospital?
+zh: 醫院在哪？
+
+tl: Huwag kang matakot.
+zh: 不要害怕。
+
+tl: Ako ang bahala sa'yo.
+zh: 我會照顧你。
+
+tl: Puwede bang bumaba ka muna?
+zh: 你可以先坐下嗎？
+
+tl: Huwag kang kikilos.
+zh: 請不要動。
+
+tl: Mag-ingat ka.
+zh: 小心一點。
+
+[分類] 照顧人常用句子（他加祿語）
+tl: Itaas mo ang kamay mo.
+zh: 把你的手抬起來。
+
+tl: Ibaba mo ang paa mo.
+zh: 把腳放下來。
+
+tl: Ako ang bahala sa pag-aalaga sa iyo.
+zh: 我會照顧你。
+
+tl: Sabihin mo kung masakit.
+zh: 如果會痛就說。
+
+tl: Kumain ka na ba?
+zh: 你吃過了嗎？
+
+tl: Magbihis na tayo.
+zh: 我們來換衣服吧。
+
+tl: Halika dito.
+zh: 過來這裡。
+[分類] 醫療詞彙（越南語）
+vi: Bệnh viện
+zh: 醫院
+
+vi: Bác sĩ
+zh: 醫生
+
+vi: Y tá
+zh: 護士
+
+vi: Thuốc
+zh: 藥
+
+vi: Đau đầu
+zh: 頭痛
+
+vi: Sốt
+zh: 發燒
+
+vi: Huyết áp
+zh: 血壓
+
+vi: Tim mạch
+zh: 心臟
+
+vi: Đường huyết
+zh: 血糖
+
+vi: Tiêm
+zh: 打針
+
+vi: Phẫu thuật
+zh: 手術
+
+vi: Băng bó
+zh: 包紮
+
+vi: Xe cứu thương
+zh: 救護車
+
+vi: Cấp cứu
+zh: 急救
+
+vi: Hô hấp
+zh: 呼吸
+
+vi: Mạch
+zh: 脈搏
+
+vi: Điều dưỡng
+zh: 看護
+
+vi: Nhiệt độ
+zh: 體溫
+
+vi: Bệnh nhân
+zh: 病人
+
+vi: Khám bệnh
+zh: 看病
+
+[分類] 日常活動指令（越南語）
+vi: Ngồi xuống
+zh: 坐下
+
+vi: Đứng lên
+zh: 站起來
+
+vi: Rửa tay
+zh: 洗手
+
+vi: Mặc quần áo
+zh: 穿衣服
+
+vi: Thay tã
+zh: 換尿布
+
+vi: Đánh răng
+zh: 刷牙
+
+vi: Tắm
+zh: 洗澡
+
+vi: Đi vệ sinh
+zh: 上廁所
+
+vi: Đi ngủ
+zh: 睡覺
+
+vi: Dậy đi
+zh: 起床
+
+vi: Uống thuốc
+zh: 吃藥
+
+vi: Nằm xuống
+zh: 躺下
+
+vi: Cởi quần áo
+zh: 脫衣服
+
+vi: Lau mặt
+zh: 擦臉
+
+vi: Uống nước
+zh: 喝水
+
+vi: Xoa bóp
+zh: 按摩
+
+vi: Đi bộ
+zh: 走路
+
+vi: Tập thể dục
+zh: 做運動
+
+vi: Mở miệng
+zh: 張嘴
+
+vi: Cẩn thận
+zh: 小心
+
+[分類] 飲食照護句型（越南語）
+vi: Bạn có muốn ăn không?
+zh: 你想吃東西嗎？
+
+vi: Đây là bữa sáng của bạn.
+zh: 這是你的早餐。
+
+vi: Ăn chậm thôi.
+zh: 慢慢吃。
+
+vi: Cắn một miếng nhỏ nhé.
+zh: 咬一小口。
+
+vi: Nhai kỹ trước khi nuốt.
+zh: 咀嚼後再吞。
+
+vi: Bạn có muốn uống sữa không?
+zh: 你想喝牛奶嗎？
+
+vi: Tránh thức ăn nóng.
+zh: 避免吃熱的。
+
+vi: Hãy thử một ít trái cây.
+zh: 試試水果吧。
+
+vi: Không được ăn quá nhanh.
+zh: 不要吃太快。
+
+vi: Hãy dùng ống hút nếu cần.
+zh: 如需要可用吸管。
+
+vi: Đây là nước ép trái cây.
+zh: 這是果汁。
+
+vi: Đừng ăn khi nằm.
+zh: 躺著不要吃東西。
+
+vi: Tôi sẽ giúp bạn ăn.
+zh: 我來餵你吃。
+
+vi: Ăn thêm một ít nữa nhé.
+zh: 再吃一點吧。
+
+vi: Bạn muốn ăn món gì?
+zh: 你想吃什麼？
+
+vi: Hôm nay có cháo.
+zh: 今天有粥。
+
+vi: Cơm còn nóng.
+zh: 飯還是熱的。
+
+vi: Uống thêm nước đi.
+zh: 多喝點水。
+
+vi: Đây là món yêu thích của bạn.
+zh: 這是你最喜歡的。
+
+vi: Ăn đủ chất nhé.
+zh: 要吃得營養。
+[分類] 醫療詞彙（印尼語）
+id: Rumah sakit
+zh: 醫院
+
+id: Dokter
+zh: 醫生
+
+id: Perawat
+zh: 護士
+
+id: Obat
+zh: 藥
+
+id: Sakit kepala
+zh: 頭痛
+
+id: Demam
+zh: 發燒
+
+id: Tekanan darah
+zh: 血壓
+
+id: Jantung
+zh: 心臟
+
+id: Gula darah
+zh: 血糖
+
+id: Suntikan
+zh: 注射
+
+id: Operasi
+zh: 手術
+
+id: Perban
+zh: 繃帶
+
+id: Ambulans
+zh: 救護車
+
+id: Darurat
+zh: 緊急
+
+id: Pernapasan
+zh: 呼吸
+
+id: Nadi
+zh: 脈搏
+
+id: Perawatan
+zh: 照護
+
+id: Suhu tubuh
+zh: 體溫
+
+id: Pasien
+zh: 病人
+
+id: Pemeriksaan
+zh: 檢查
+
+[分類] 日常活動指令（印尼語）
+id: Duduklah
+zh: 請坐
+
+id: Berdirilah
+zh: 站起來
+
+id: Cuci tangan
+zh: 洗手
+
+id: Pakai baju
+zh: 穿衣服
+
+id: Ganti popok
+zh: 換尿布
+
+id: Sikat gigi
+zh: 刷牙
+
+id: Mandi
+zh: 洗澡
+
+id: Ke toilet
+zh: 上廁所
+
+id: Tidur
+zh: 睡覺
+
+id: Bangun
+zh: 起床
+
+id: Minum obat
+zh: 吃藥
+
+id: Berbaring
+zh: 躺下
+
+id: Lepas baju
+zh: 脫衣服
+
+id: Lap wajah
+zh: 擦臉
+
+id: Minum air
+zh: 喝水
+
+id: Pijat
+zh: 按摩
+
+id: Jalan kaki
+zh: 走路
+
+id: Olahraga
+zh: 運動
+
+id: Buka mulut
+zh: 張嘴
+
+id: Hati-hati
+zh: 小心
+
+[分類] 飲食照護句型（印尼語）
+id: Apakah Anda lapar?
+zh: 你餓了嗎？
+
+id: Ini sarapan Anda.
+zh: 這是你的早餐。
+
+id: Makan perlahan.
+zh: 慢慢吃。
+
+id: Gigit sedikit dulu.
+zh: 咬一小口。
+
+id: Kunyah dulu sebelum telan.
+zh: 咀嚼後再吞。
+
+id: Mau minum susu?
+zh: 想喝牛奶嗎？
+
+id: Hindari makanan panas.
+zh: 避免熱食。
+
+id: Coba buah ini.
+zh: 試試這水果。
+
+id: Jangan makan terlalu cepat.
+zh: 不要吃太快。
+
+id: Gunakan sedotan jika perlu.
+zh: 需要的話用吸管。
+
+id: Ini jus buah.
+zh: 這是果汁。
+
+id: Jangan makan sambil tiduran.
+zh: 躺著不要吃。
+
+id: Saya bantu suapi ya.
+zh: 我來餵你吃。
+
+id: Tambah sedikit lagi ya.
+zh: 再吃一點。
+
+id: Ingin makan apa?
+zh: 想吃什麼？
+
+id: Hari ini ada bubur.
+zh: 今天有粥。
+
+id: Nasi masih hangat.
+zh: 飯還是熱的。
+
+id: Minum air lagi.
+zh: 多喝水。
+
+id: Ini makanan kesukaan Anda.
+zh: 這是你喜歡的。
+
+id: Makan yang bergizi ya.
+zh: 要吃得營養。
+
+[分類] 醫療詞彙（他加祿語）
+tl: Ospital
+zh: 醫院
+
+tl: Doktor
+zh: 醫生
+
+tl: Nars
+zh: 護士
+
+tl: Gamot
+zh: 藥
+
+tl: Sakit ng ulo
+zh: 頭痛
+
+tl: Lagnat
+zh: 發燒
+
+tl: Presyon ng dugo
+zh: 血壓
+
+tl: Puso
+zh: 心臟
+
+tl: Asukal sa dugo
+zh: 血糖
+
+tl: Iniksyon
+zh: 注射
+
+tl: Operasyon
+zh: 手術
+
+tl: Bandage
+zh: 繃帶
+
+tl: Ambulansya
+zh: 救護車
+
+tl: Emergency
+zh: 緊急
+
+tl: Paghinga
+zh: 呼吸
+
+tl: Pulso
+zh: 脈搏
+
+tl: Pag-aalaga
+zh: 照護
+
+tl: Temperatura
+zh: 體溫
+
+tl: Pasyente
+zh: 病人
+
+tl: Check-up
+zh: 檢查
+
+[分類] 日常活動指令（他加祿語）
+tl: Umupo ka
+zh: 請坐
+
+tl: Tumayo ka
+zh: 請站
+
+tl: Maghugas ng kamay
+zh: 洗手
+
+tl: Magbihis
+zh: 換衣服
+
+tl: Palitan ang diaper
+zh: 換尿布
+
+tl: Magsipilyo ng ngipin
+zh: 刷牙
+
+tl: Maligo ka
+zh: 洗澡
+
+tl: Gumamit ng banyo
+zh: 上廁所
+
+tl: Matulog ka
+zh: 睡覺
+
+tl: Gumising ka
+zh: 起床
+
+tl: Uminom ng gamot
+zh: 吃藥
+
+tl: Humiga ka
+zh: 躺下
+
+tl: Hubarin ang damit
+zh: 脫衣服
+
+tl: Magpunas ng mukha
+zh: 擦臉
+
+tl: Uminom ng tubig
+zh: 喝水
+
+tl: Magmasahe
+zh: 按摩
+
+tl: Maglakad
+zh: 走路
+
+tl: Mag-ehersisyo
+zh: 做運動
+
+tl: Ibuka ang bibig
+zh: 張嘴
+
+tl: Mag-ingat ka
+zh: 小心
+
+[分類] 飲食照護句型（他加祿語）
+tl: Gutom ka ba?
+zh: 你餓了嗎？
+
+tl: Ito ang almusal mo.
+zh: 這是你的早餐。
+
+tl: Dahan-dahan lang kumain.
+zh: 慢慢吃。
+
+tl: Kumagat ka ng kaunti.
+zh: 咬一小口。
+
+tl: Nguyain muna bago lunok.
+zh: 咀嚼後再吞。
+
+tl: Gusto mo ba ng gatas?
+zh: 你想喝牛奶嗎？
+
+tl: Iwasan ang mainit na pagkain.
+zh: 避免熱食。
+
+tl: Subukan mo ang prutas.
+zh: 試試水果。
+
+tl: Huwag kumain nang mabilis.
+zh: 不要吃太快。
+
+tl: Gamitin ang straw kung kailangan.
+zh: 如果需要，用吸管。
+
+tl: Ito ay katas ng prutas.
+zh: 這是果汁。
+
+tl: Huwag kumain habang nakahiga.
+zh: 躺著不要吃。
+
+tl: Tutulungan kitang kumain.
+zh: 我會餵你吃。
+
+tl: Kain pa ng kaunti.
+zh: 再吃一點。
+
+tl: Anong gusto mong kainin?
+zh: 你想吃什麼？
+
+tl: May lugaw tayo ngayon.
+zh: 今天有粥。
+
+tl: Mainit pa ang kanin.
+zh: 飯還是熱的。
+
+tl: Uminom ka pa ng tubig.
+zh: 再喝點水。
+
+tl: Paborito mong pagkain ito.
+zh: 這是你最喜歡的。
+
+tl: Kumain ka nang masustansya.
+zh: 要吃得營養。

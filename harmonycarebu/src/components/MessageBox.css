@@ -1,0 +1,59 @@
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.message-box {
+    display: inline-block;
+
+    width: max-content;
+    height: max-content;
+
+    padding: 0.5rem;
+    border-radius: 10px;
+
+    margin-top: 1rem;
+
+    font-size: xx-large;
+
+    max-width: 80%;
+
+    min-height: 1rem;
+    text-wrap: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+    overflow:visible;
+}
+
+.message-box > img {
+    object-fit: contain;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.message-box-right {
+    background-color: #F4F4F4;
+    align-self: flex-end;
+}
+
+.message-box-left {
+    background: 
+        linear-gradient(rgba(255,0,0,0.3) 0%, rgba(255,154,0,0.3) 10%, rgba(208,222,33,0.3) 20%, rgba(79,220,74,0.3) 30%, rgba(63,218,216,0.3) 40%, rgba(47,201,226,0.3) 50%, rgba(28,127,238,0.3) 60%, rgba(95,21,242,0.3) 70%, rgba(186,12,248,0.3) 80%, rgba(251,7,217,0.3) 90%, rgba(255,0,0,0.3) 100%) 
+        0 0/100% 200%;
+    
+    animation: rainbow-animation 2s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    to {background-position:0 -200%}
+}

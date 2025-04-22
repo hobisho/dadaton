@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>Harmonycare Chat</title>
+  <!-- 引入 marked.js 用於解析 Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+    }
+    #chat-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .message {
+      max-width: 80%;
+      padding: 15px 20px;
+      border-radius: 20px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    .user {
+      align-self: flex-end;
+      background-color: #4caf50;
+      color: #fff;
+      border-bottom-right-radius: 0;
+    }
+    .assistant {
+      align-self: flex-start;
+      background-color: #fff;
+      color: #333;
+      border-bottom-left-radius: 0;
+    }
+    /* 劃分 assistant 的文字與控制區 */
+    .assistant-text { }
+    .assistant-controls {
+      margin-top: 10px;
+    }
+    .assistant img {
+      display: block;
+      border-radius: 10px;
+      margin-top: 10px;
+      max-width: 100%;
+    }
+    .loading-spinner {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border: 2px solid rgba(0,0,0,0.1);
+      border-top-color: #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #input-container {
+      background-color: #fff;
+      padding: 15px;
+      border-top: 1px solid #e5e5e5;
+    }
+    #input-text {
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      font-size: 16px;
+      resize: none;
+    }
+    #file-input { margin-top: 10px; }
+    #send-btn {
+      margin-top: 10px;
+      width: 100%;
+      padding: 12px;
+      background-color: #0071e3;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #send-btn:hover { background-color: #005bb5; }
+    /* 語音播放按鈕（文字改為 "聆聽"） */
+    .speech-btn {
+      padding: 8px 12px;
+      background-color: #0071e3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .speech-btn:hover { background-color: #005bb5; }
+  </style>
+</head>
+<body>
+  <header>Harmonycare Chat</header>
+  <div id="chat-container"></div>
+  <div id="input-container">
+    <form>
+      <textarea id="input-text" placeholder="請輸入訊息..."></textarea>
+      <input type="file" id="file-input" accept="image/*">
+      <button id="send-btn">送出</button>
+    </form>
+  </div>
+  <script>
+    // 利用 Web Speech API 將文字轉為語音
+    function speakText(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'zh-TW';
+      utterance.rate = 1.0;
+      speechSynthesis.speak(utterance);
+    }
+
+    /**
+     * 新增對話訊息
+     * 若 sender 為 "assistant"，分別建立 assistant-text 與 assistant-controls 區域，
+     * 並在 controls 區中放入「聆聽」按鈕
+     * @param {string} content - 文字內容 (Markdown 格式)
+     * @param {string} sender - "user" 或 "assistant"
+     * @param {boolean} returnEl - 若 true 則回傳該訊息的 DOM 元素
+     * @returns {HTMLElement|undefined}
+     */
+    function addMessage(content, sender, returnEl = false) {
+      const chatContainer = document.getElementById("chat-container");
+      const messageDiv = document.createElement("div");
+      messageDiv.classList.add("message", sender);
+      if (sender === "assistant") {
+        // 分成文字與控制區
+        const textDiv = document.createElement("div");
+        textDiv.classList.add("assistant-text");
+        textDiv.innerHTML = marked.parse(content);
+        messageDiv.appendChild(textDiv);
+
+        const controlsDiv = document.createElement("div");
+        controlsDiv.classList.add("assistant-controls");
+        const speechBtn = document.createElement("button");
+        speechBtn.textContent = "播放語音";
+        speechBtn.classList.add("speech-btn");
+        speechBtn.onclick = function() {
+          // 僅用文字區的內文進行語音播放
+          speakText(textDiv.innerText);
+        };
+        controlsDiv.appendChild(speechBtn);
+        messageDiv.appendChild(controlsDiv);
+      } else {
+        // 使用者的訊息
+        messageDiv.innerHTML = marked.parse(content);
+      }
+      chatContainer.appendChild(messageDiv);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+      // 為訊息中的所有圖片加入 onerror 處理
+      const images = messageDiv.querySelectorAll("img");
+      images.forEach(img => {
+        img.onerror = function() {
+          this.outerHTML = "<span>系統錯誤，請稍後再試。</span>";
+        };
+      });
+      if (returnEl) return messageDiv;
+    }
+
+    /**
+     * 向後端 API 發送查詢，等待圖片載入（最多 3 分鐘），然後刪除等待訊息，
+     * 並用 addMessage 新增機器人真實回覆
+     */
+    function sendQuery(query, base64Image, loadingEl) {
+      fetch("/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: query, image: base64Image })
+      })
+      .then(response => response.json())
+      .then(data => {
+        // 刪除等待訊息
+        if (loadingEl && loadingEl.parentNode) {
+          loadingEl.parentNode.removeChild(loadingEl);
+        }
+        // 新增真正的機器人回覆訊息
+        const newAssistantMsg = addMessage(data.answer, "assistant", true);
+        // 如果有圖片資料，處理圖片載入
+        if (typeof data.image === "string" && data.image.trim().length > 0) {
+          const imgElem = document.createElement("img");
+          imgElem.style.maxWidth = "100%";
+          imgElem.style.marginTop = "10px";
+          // 建立 Promise 監控圖片載入 or 超時
+          const imgLoadPromise = new Promise((resolve) => {
+            imgElem.onload = function() {
+              resolve(imgElem);
+            };
+            imgElem.onerror = function() {
+              console.error("圖片載入失敗");
+              resolve(null); // 超時或失敗就 resolve null
+            };
+          });
+          const timeoutPromise = new Promise((resolve) => {
+            setTimeout(() => { resolve(null); }, 180000); // 3 分鐘超時
+          });
+          imgElem.src = "data:image/png;base64," + data.image;
+          Promise.race([imgLoadPromise, timeoutPromise]).then((result) => {
+            // 將圖片元素附加到 assistant-text 區（不干擾語音控制按鈕）
+            const textDiv = newAssistantMsg.querySelector(".assistant-text");
+            if (result) {
+              textDiv.appendChild(result);
+            }
+          }).catch(err => {
+            console.error("Promise.race 發生錯誤:", err);
+          });
+        }
+      })
+      .catch(error => {
+        console.error("發送查詢失敗:", error);
+        if (loadingEl && loadingEl.parentNode) {
+          loadingEl.parentNode.removeChild(loadingEl);
+        }
+        addMessage("系統錯誤，請稍後再試。", "assistant");
+      });
+    }
+
+    // 送出按鈕點擊事件
+    document.getElementById("send-btn").addEventListener("click", function() {
+      const inputText = document.getElementById("input-text");
+      const fileInput = document.getElementById("file-input");
+      const query = inputText.value.trim();
+      if (!query) return;
+      addMessage(query, "user");
+      inputText.value = "";
+      const loadingMessage = addMessage('<span class="loading-spinner"></span>等待中...', "assistant", true);
+      if (fileInput.files.length > 0) {
+        const file = fileInput.files[0];
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const base64Image = e.target.result.split(",")[1];
+          sendQuery(query, base64Image, loadingMessage);
+        };
+        reader.onerror = function(e) {
+          console.error("圖片轉換錯誤：", e);
+          sendQuery(query, "", loadingMessage);
+        };
+        reader.readAsDataURL(file);
+        fileInput.value = "";
+      } else {
+        sendQuery(query, "", loadingMessage);
+      }
+    });
+  </script>
+</body>
+</html>
